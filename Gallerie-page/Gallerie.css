@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #ededed;
+  overflow-x: hidden;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+:root {
+  --primary-color: #1d3557;
+  --secondary-color: #457b9d;
+  --third-color: #a8dadc;
+  --fourth-color: #f1faee;
+  --fifth-color: #e63946;
+  --section_margin: 9.6rem;
+}
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.header {
+  height: 9.6rem;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  padding: 0 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo:link,
+.logo:visited {
+  text-decoration: none;
+  font-size: 4.8rem;
+  font-weight: 500;
+  color: var(--fourth-color);
+}
+.ul_of_navigation {
+  width: 50%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.anchor_of_navigation:link,
+.anchor_of_navigation:visited {
+  font-size: 1.8rem;
+  color: var(--third-color);
+  text-decoration: none;
+  transition: all 300ms;
+}
+.anchor_of_navigation:hover,
+.anchor_of_navigation:active {
+  color: var(--fourth-color);
+}
+
+/*-----------------mobile nav---------------*/
+
+.btn_mobile_nav {
+  background: none;
+  border: none;
+  display: none;
+}
+.icon_mobile_nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--primary-color);
+}
+.menu_icon {
+  display: none;
+}
+.close_icon {
+  display: none;
+}
+
+/* --------------------main-------------------- */
+.section {
+  padding: 9.6rem 3rem 0 3rem;
+}
+.cnt_of_cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  overflow-x: scroll;
+}
+.cnt_of_cards::-webkit-scrollbar {
+  display: none;
+}
+.title_of_section {
+  text-align: center;
+  padding-bottom: 4rem;
+  font-size: 2.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #1d3557;
+}
+.cnt_of_vehicle {
+  text-align: center;
+}
+.cnt_of_img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.img {
+  height: 20rem;
+  width: 32rem;
+  transition: all 300ms ease-in;
+}
+.img:hover {
+  filter: blur(15px);
+}
+.img:hover ~ .model_of_vehicle {
+  opacity: 1;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.model_of_vehicle:hover {
+  opacity: 1;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.img:hover ~ .type_of_energie {
+  opacity: 1;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.type_of_energie:hover {
+  opacity: 1;
+  top: 27%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.model_of_vehicle {
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-270%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 700ms;
+}
+.type_of_energie {
+  font-size: 1.8rem;
+  position: absolute;
+  font-weight: 300;
+  color: var(--secondary-color);
+  top: 27%;
+  left: 50%;
+  transform: translate(600%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 500ms;
+}
+.section:first-child .type_of_energie {
+  color: var(--primary-color);
+}
+.section:first-child .model_of_vehicle {
+  color: var(--secondary-color);
+}
+.section:nth-child(6) .type_of_energie {
+  color: var(--primary-color);
+}
+.section:nth-child(6) .model_of_vehicle {
+  color: var(--secondary-color);
+}
+.section:nth-child(6) .boite_vitesse {
+  color: var(--third-color);
+}
+
+/* /////////////////   citadines section     /////////////////// */
+.citadines_section .type_of_energie {
+  color: var(--fourth-color);
+}
+.citadines_section .model_of_vehicle {
+  color: var(--fourth-color);
+}
+.citadines_section .boite_vitesse {
+  color: var(--fourth-color);
+}
+.boite_vitesse {
+  font-size: 1.8rem;
+  position: absolute;
+  font-weight: 300;
+  color: var(--secondary-color);
+  top: 40%;
+  left: 50%;
+  transform: translate(-270%, -50%);
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 300ms;
+}
+.img:hover ~ .boite_vitesse {
+  opacity: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.boite_vitesse:hover {
+  opacity: 1;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* /////////////////   compact section     /////////////////// */
+
+.section .type_of_energie {
+  color: var(--fourth-color);
+}
+.section .model_of_vehicle {
+  color: var(--fourth-color);
+}
+.section .boite_vitesse {
+  color: var(--fourth-color);
+}
+/* /////////////////   berline section     /////////////////// */
+
+.section .type_of_energie {
+  color: var(--fourth-color);
+}
+.section .model_of_vehicle {
+  color: var(--fourth-color);
+}
+.section .boite_vitesse {
+  color: var(--fourth-color);
+}
+/* /////////////////   engin de chantier section     /////////////////// */
+
+/* /////////////////   camion section     /////////////////// */
+.section .type_of_energie {
+  color: var(--fourth-color);
+}
+.section .model_of_vehicle {
+  color: var(--fourth-color);
+}
+.section .boite_vitesse {
+  color: var(--fourth-color);
+}
+main .section:last-child {
+  padding-bottom: 9.6rem;
+}
+/* --------------------footer-------------------- */
+footer {
+  padding: 7.4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+  background-color: var(--fourth-color);
+}
+.parts_of_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .logo:link,
+footer .logo:visited {
+  text-decoration: none;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.parts_of_footer:first-child a {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.parts_of_footer:first-child .logo:link {
+  width: 100%;
+  height: 100%;
+}
+.parts_of_footer:first-child {
+  justify-content: space-between;
+}
+.parts_of_footer:nth-child(2) {
+  justify-content: space-between;
+}
+.cnt_of_social_media_icons {
+  display: flex;
+  gap: 2.8rem;
+}
+.social_media_icons {
+  width: 100%;
+  height: 100%;
+}
+.copyrights_paragraph {
+  text-align: center;
+  padding-bottom: 2.4rem;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--primary-color);
+  background-color: var(--fourth-color);
+}
+.parts_of_footer h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.parts_of_footer address {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+.parts_of_footer p {
+  font-size: 1.6rem;
+}
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  transition: 300ms all;
+}
+footer a:hover {
+  color: var(--secondary-color);
+}

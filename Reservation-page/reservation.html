@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | RentMeNow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reservation.css" />
+    <link rel="stylesheet" href="querry.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation container">
+        <a class="logo" href="index.html">RentMeNow</a>
+        <ul class="ul_of_navigation">
+          <li class="li_of_navigation">
+            <a class="anchor_of_navigation" href="../index.html"> home</a>
+          </li>
+          <li class="li_of_navigation>">
+            <a
+              class="anchor_of_navigation"
+              href="../Gallerie-page/Gallerie.html"
+            >
+              Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="anchor_of_navigation"
+              href="../Reservation-page/reservation.html"
+            >
+              booking</a
+            >
+          </li>
+          <li>
+            <a class="anchor_of_navigation" href="../contact-page/contact.html">
+              contact</a
+            >
+          </li>
+        </ul>
+        <button class="btn_mobile_nav">
+          <ion-icon
+            class="icon_mobile_nav menu_icon"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            class="icon_mobile_nav close_icon"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <!-- //////////////////////////////////////////// -->
+    <main>
+      <h1 class="booking">Booking</h1>
+      <h2 id="go_too" class="choose_Vehicul_h2">choose vehicul :</h2>
+      <div class="cnt_of_forms_choose_vehicul">
+        <form class="forms_choose_vehicul" action="#">
+          <div class="sub_form_of_choose_vehicul">
+            <input
+              class="input input_moto"
+              type="radio"
+              name="choice"
+              value="moto"
+              id="moto"
+            />
+            <label class="label" for="moto">Moto</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input
+              class="input input_citadin"
+              type="radio"
+              name="choice"
+              value="citadin"
+              id="citadin"
+            />
+            <label class="label" for="citadin">Citadine</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input class="input" type="radio" name="choice" id="compact" />
+            <label class="label" for="compact">compact</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input class="input" type="radio" name="choice" id="berline" />
+            <label class="label" for="berline">berline</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input class="input" type="radio" name="choice" id="Utilitaire" />
+            <label class="label" for="Utilitaire">Utilitaire</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input class="input" type="radio" name="choice" id="engin" />
+            <label class="label" for="engin">engin de chantier</label>
+          </div>
+          <div class="sub_form_of_choose_vehicul">
+            <input class="input" type="radio" name="choice" id="camion" />
+            <label class="label" for="camion">camion</label>
+          </div>
+        </form>
+      </div>
+      <button class="nextOne">
+        <a class="pokos" href="#go_too">next</a>
+      </button>
+      <h2 class="choose_Vehicul_h2">choose type of engin :</h2>
+      <form class="form_power" action="#">
+        <div class="electric_form">
+          <input class="input" type="radio" name="choiceTwo" id="electric" />
+          <label class="label" for="electric">electrique</label>
+        </div>
+        <div class="hybride_form">
+          <input class="input" type="radio" name="choiceTwo" id="hybride" />
+          <label class="label" for="hybride">hybride</label>
+        </div>
+        <div class="essence_form">
+          <input class="input" type="radio" name="choiceTwo" id="essence" />
+          <label class="label" for="essence">essence</label>
+        </div>
+        <div class="diesel_form">
+          <input class="input" type="radio" name="choiceTwo" id="diesel" />
+          <label class="label" for="diesel">diesel</label>
+        </div>
+      </form>
+      <button class="nextTwo">
+        <a class="pokos" href="#go_to" id="go_to">next</a>
+      </button>
+      <!-- <p class="word_price">current price / day</p> -->
+      <!-- <p class="price">1$</p> -->
+      <h2 class="choose_Vehicul_h2 boite_a_vitess_header">boite à vitesse :</h2>
+      <p class="boite_a_vitess_paragraph">Manuelle</p>
+      <!-- <button class="nextThree">next</button> -->
+      <!-- <p class="word_price">current price / day</p> -->
+      <!-- <p class="price">1$</p> -->
+      <h2 class="choose_Vehicul_h2">how many days :</h2>
+      <section>
+        <input class="days_input" type="number" name="days" id="days" />
+      </section>
+      <button class="nextFour">Finish</button>
+      <p class="word_price">last price</p>
+      <p class="price">0$</p>
+      <button class="nextFour Search_again">
+        <a class="Search_again" href="reservation.html">Search again</a>
+      </button>
+    </main>
+    <!-- //////////////////////////////////////////// -->
+    <footer>
+      <div class="logo_div_and_social_media parts_of_footer">
+        <a class="logo" href="index.html">RentMeNow</a>
+        <div class="cnt_of_social_media_icons">
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/facebook.png"
+              alt="social media pages"
+          /></a>
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/instagram.png"
+              alt="social media pages"
+          /></a>
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/twitter-sign.png"
+              alt="social media pages"
+          /></a>
+        </div>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Contact us</h4>
+        <address>623 Harrison St., 2nd Floor, San Francisco, CA 94107</address>
+        <a href="tel:415-201-6370">415-201-6370</a>
+        <a href="mailto:hello@RentMeNow.com">hello@RentMeNow.com</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>account</h4>
+        <a href="#">Create account</a>
+        <a href="#">Sign in</a>
+        <a href="#">IOS app</a>
+        <a href="#">Android account</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Company</h4>
+        <a href="#">about RentMeNow</a>
+        <a href="#">For bussnies</a>
+        <a href="#">brands partners</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Resources</h4>
+        <a href="#">Recipe directory</a>
+        <a href="#">Help center</a>
+        <a href="#">Privacy & terms</a>
+      </div>
+    </footer>
+    <p class="copyrights_paragraph">
+      Copyright © 2027 by RentMeNow, Inc. All rights reserved.
+    </p>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const btnNavEl = document.querySelector(".btn_mobile_nav");
+      const headerEl = document.querySelector(".header");
+
+      btnNavEl.addEventListener("click", function () {
+        headerEl.classList.toggle("nav_open");
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contact us | RentMeNow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="querry.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation container">
+        <a class="logo" href="index.html">RentMeNow</a>
+        <ul class="ul_of_navigation">
+          <li class="li_of_navigation">
+            <a class="anchor_of_navigation" href="../index.html"> home</a>
+          </li>
+          <li class="li_of_navigation>">
+            <a
+              class="anchor_of_navigation"
+              href="../Gallerie-page/Gallerie.html"
+            >
+              Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="anchor_of_navigation"
+              href="../Reservation-page/reservation.html"
+            >
+              booking</a
+            >
+          </li>
+          <li>
+            <a class="anchor_of_navigation" href="../contact-page/contact.html">
+              contact</a
+            >
+          </li>
+        </ul>
+        <button class="btn_mobile_nav">
+          <ion-icon
+            class="icon_mobile_nav menu_icon"
+            name="menu-outline"
+          ></ion-icon>
+          <ion-icon
+            class="icon_mobile_nav close_icon"
+            name="close-outline"
+          ></ion-icon>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <form action="#" class="contact_form container">
+        <div>
+          <label for="first Name">First Name :</label>
+          <input
+            placeholder="first Name"
+            required
+            type="text"
+            id="lName"
+            name="fName"
+            class="first_Name"
+          />
+        </div>
+        <div>
+          <label for="lName">Last Name :</label>
+          <input
+            placeholder="Last Name"
+            required
+            type="text"
+            id="lName"
+            name="lName"
+            class="last_Name"
+          />
+        </div>
+        <div>
+          <label for="topic">topic :</label>
+          <!-- <input placeholder="phone number" type="number" id="tel" name="tel" /> -->
+          <select name="topic" id="topic" class="topic">
+            <option value="technique problems">technique problems</option>
+            <option value="service problems">service problems</option>
+            <option value="delay problems">delay problems</option>
+            <option value="other problem">other problem</option>
+          </select>
+        </div>
+        <div>
+          <label for="Email">Email adresse :</label>
+          <input
+            placeholder="Email adresse"
+            required
+            type="text"
+            id="Email"
+            name="Email"
+            class="Email"
+          />
+        </div>
+        <div class="message_form">
+          <label for="message">message</label>
+          <textarea
+            placeholder="Email adresse"
+            name="message"
+            id="message"
+            cols="5"
+            rows="5"
+            class="message"
+          ></textarea>
+        </div>
+        <div class="Submit_button">
+          <button class="Submit_link">Submit</button>
+        </div>
+        <div class="pop_up_form">
+          <div class="message_submitted">
+            your message submitted succesfully
+          </div>
+          <p>your First Name : <span class="first_Name_pop">p</span></p>
+          <p>your Last Name : <span class="last_Name_pop"></span></p>
+          <p>your topic : <span class="topic_pop"></span></p>
+          <p>your Email : <span class="Email_pop"></span></p>
+          <p>your message : <span class="message_pop"></span></p>
+          <button class="Done_button">done</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <div class="logo_div_and_social_media parts_of_footer">
+        <a class="logo" href="index.html">RentMeNow</a>
+        <div class="cnt_of_social_media_icons">
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/facebook.png"
+              alt="social media pages"
+          /></a>
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/instagram.png"
+              alt="social media pages"
+          /></a>
+          <a href="#"
+            ><img
+              class="social_media_icons"
+              src="../images/twitter-sign.png"
+              alt="social media pages"
+          /></a>
+        </div>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Contact us</h4>
+        <address>623 Harrison St., 2nd Floor, San Francisco, CA 94107</address>
+        <a href="tel:415-201-6370">415-201-6370</a>
+        <a href="mailto:hello@RentMeNow.com">hello@RentMeNow.com</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>account</h4>
+        <a href="#">Create account</a>
+        <a href="#">Sign in</a>
+        <a href="#">IOS app</a>
+        <a href="#">Android account</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Company</h4>
+        <a href="#">about RentMeNow</a>
+        <a href="#">For bussnies</a>
+        <a href="#">brands partners</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="parts_of_footer">
+        <h4>Resources</h4>
+        <a href="#">Recipe directory</a>
+        <a href="#">Help center</a>
+        <a href="#">Privacy & terms</a>
+      </div>
+    </footer>
+    <p class="copyrights_paragraph">
+      Copyright © 2027 by RentMeNow, Inc. All rights reserved.
+    </p>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
